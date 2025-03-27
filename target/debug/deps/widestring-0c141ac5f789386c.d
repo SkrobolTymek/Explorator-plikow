@@ -1,0 +1,11 @@
+C:\Users\Tymek\Desktop\New folder\Explorator-plikow\target\debug\deps\libwidestring-0c141ac5f789386c.rmeta: C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\widestring-0.4.3\src\lib.rs C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\widestring-0.4.3\src\platform\mod.rs C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\widestring-0.4.3\src\platform\windows.rs C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\widestring-0.4.3\src\ucstr.rs C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\widestring-0.4.3\src\ucstring.rs C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\widestring-0.4.3\src\ustr.rs C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\widestring-0.4.3\src\ustring.rs
+
+C:\Users\Tymek\Desktop\New folder\Explorator-plikow\target\debug\deps\widestring-0c141ac5f789386c.d: C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\widestring-0.4.3\src\lib.rs C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\widestring-0.4.3\src\platform\mod.rs C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\widestring-0.4.3\src\platform\windows.rs C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\widestring-0.4.3\src\ucstr.rs C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\widestring-0.4.3\src\ucstring.rs C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\widestring-0.4.3\src\ustr.rs C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\widestring-0.4.3\src\ustring.rs
+
+C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\widestring-0.4.3\src\lib.rs:
+C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\widestring-0.4.3\src\platform\mod.rs:
+C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\widestring-0.4.3\src\platform\windows.rs:
+C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\widestring-0.4.3\src\ucstr.rs:
+C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\widestring-0.4.3\src\ucstring.rs:
+C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\widestring-0.4.3\src\ustr.rs:
+C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\widestring-0.4.3\src\ustring.rs:

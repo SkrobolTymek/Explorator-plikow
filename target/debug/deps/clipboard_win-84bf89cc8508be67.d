@@ -1,0 +1,10 @@
+C:\Users\Tymek\Desktop\New folder\Explorator-plikow\target\debug\deps\libclipboard_win-84bf89cc8508be67.rmeta: C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clipboard-win-3.1.1\src\lib.rs C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clipboard-win-3.1.1\src\formats.rs C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clipboard-win-3.1.1\src\raw.rs C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clipboard-win-3.1.1\src\dib.rs C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clipboard-win-3.1.1\src\image.rs C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clipboard-win-3.1.1\src\utils.rs
+
+C:\Users\Tymek\Desktop\New folder\Explorator-plikow\target\debug\deps\clipboard_win-84bf89cc8508be67.d: C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clipboard-win-3.1.1\src\lib.rs C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clipboard-win-3.1.1\src\formats.rs C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clipboard-win-3.1.1\src\raw.rs C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clipboard-win-3.1.1\src\dib.rs C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clipboard-win-3.1.1\src\image.rs C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clipboard-win-3.1.1\src\utils.rs
+
+C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clipboard-win-3.1.1\src\lib.rs:
+C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clipboard-win-3.1.1\src\formats.rs:
+C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clipboard-win-3.1.1\src\raw.rs:
+C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clipboard-win-3.1.1\src\dib.rs:
+C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clipboard-win-3.1.1\src\image.rs:
+C:\Users\Tymek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clipboard-win-3.1.1\src\utils.rs:
