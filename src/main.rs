@@ -1,4 +1,4 @@
-use eframe::{egui::CentralPanel, epi::App, run_native, NativeOptions};
+use eframe::{egui::CentralPanel, egui , epi::App, run_native, NativeOptions};
 use std::fs;
 
 struct Folders;
@@ -6,7 +6,13 @@ struct Folders;
 impl App for Folders {
     fn update(&mut self, ctx: &eframe::egui::CtxRef, frame: &mut eframe::epi::Frame<'_>){
         CentralPanel::default().show(ctx, |ui| {
-            ui.label("label");
+            let paths = fs::read_dir("C:\\").unwrap();
+            
+            for path in paths{ 
+                let path = path.unwrap().path();
+                let path = path.display();
+                ui.add(egui::Label::new(path));
+            }
         });
     }
     fn name(&self) -> &str {
@@ -19,10 +25,6 @@ impl App for Folders {
 fn main() {
     let app = Folders;
     let win_option = NativeOptions::default();
-    // let paths = fs::read_dir("C:\\").unwrap();
-
-    // for path in paths{ 
-    // println!("Name: {}", path.unwrap().path().display());  
-    // }
+   
     run_native(Box::new(app), win_option);
 }
