@@ -61,7 +61,7 @@ impl FileExplorer {
             for entry in entries.flatten() {
                 let entry_path = entry.path();
                 if entry_path.is_dir() {
-                    // Obsługa błędów: pomijamy katalogi bez dostępu
+                    
                     if entry_path.read_dir().is_ok() {
                         FileExplorer::search_files(&entry_path, query, results);
                     }
