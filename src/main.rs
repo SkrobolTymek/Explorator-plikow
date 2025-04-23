@@ -12,6 +12,7 @@ use chrono::{DateTime, Local};
 use dirs;
 use once_cell::sync::Lazy;
 use parking_lot::Mutex;
+use human_sort::compare;
 
 static LAST_PATH: Lazy<Mutex<PathBuf>> = Lazy::new(|| {
     Mutex::new(dirs::home_dir().unwrap_or_else(|| PathBuf::from("/")))
@@ -108,9 +109,16 @@ impl FileExplorer {
 
     fn sort_items(&mut self) {
         match self.sort_by {
-            SortBy::Name => self.items.sort_by(|a, b| {
-                natural_sort::compare(&a.name.to_lowercase(), &b.name.to_lowercase())
-            }),
+            SortBy::Name => {
+                self.items.sort_by(|a, b| {
+                    let order = compare(&a.name, &b.name);
+                    if self.sort_ascending {
+                        order
+                    } else {
+                        order.reverse()
+                    }
+                });
+            },
             SortBy::Size => self.items.sort_by(|a, b| a.size.cmp(&b.size)),
             SortBy::Modified => self.items.sort_by(|a, b| a.modified.cmp(&b.modified)),
             SortBy::Type => self.items.sort_by(|a, b| {
@@ -118,10 +126,6 @@ impl FileExplorer {
                 let b_ext = b.path.extension().map(|s| s.to_string_lossy());
                 a_ext.cmp(&b_ext)
             }),
-        }
-
-        if !self.sort_ascending {
-            self.items.reverse();
         }
     }
 
@@ -230,9 +234,9 @@ impl FileExplorer {
                 ui.end_row();
 
                 let items = if self.searching {
-                    &self.search_results
+                    self.search_results.clone()
                 } else {
-                    &self.items
+                    self.items.clone()
                 };
 
                 for item in items {
@@ -297,20 +301,6 @@ fn main() -> eframe::Result<()> {
     run_native(
         "Modern File Explorer",
         options,
-        Box::new(|cc| {
-            let mut fonts = egui::FontDefinitions::default();
-            fonts.font_data.insert(
-                "noto_sans".to_owned(),
-                egui::FontData::from_static(include_bytes!("../fonts/NotoSans-Regular.ttf")),
-            );
-            fonts
-                .families
-                .entry(egui::FontFamily::Proportional)
-                .or_default()
-                .insert(0, "noto_sans".to_owned());
-            
-            cc.egui_ctx.set_fonts(fonts);
-            Ok(Box::new(FileExplorer::default()))
-        }),
+        Box::new(|_cc| Box::new(FileExplorer::default())),
     )
 }
